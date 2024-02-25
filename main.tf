@@ -59,12 +59,12 @@ resource "aws_s3_bucket_website_configuration" "app" {
 }
 
 resource "aws_s3_object" "app" {
+  depends_on = [
+    aws_s3_bucket_acl
+  ]
   acl          = "public-read"
   key          = "index.html"
   bucket       = aws_s3_bucket.app.id
   content      = file("./assets/index.html")
   content_type = "text/html"
-  depends_on = [
-    aws_s3_bucket_acl
-  ]
 }
