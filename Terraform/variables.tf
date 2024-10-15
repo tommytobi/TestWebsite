@@ -1,14 +1,5 @@
-variable "region" {
-  type        = string
-  description = "AWS region for all resources."
-}
+variable "aws_region" { }
 
-variable "label" {
-  type        = string
-  description = "Application label."
-}
+variable "bucket_name" { }
 
-variable "app" {
-  type        = string
-  description = "Application name."
-}
+variable "domain" { }
