@@ -1,5 +1,5 @@
-aws_region = "us-east-1"
+aws_region = "af-south-1"
 
-bucket_name = "us-east-1.cookiemonstersoftware.com"
+bucket_name = "af-south-1.devopsdeployed.com"
 
-domain = "cookiemonstersoftware.com"
+domain = "devopsdeployed.com "
